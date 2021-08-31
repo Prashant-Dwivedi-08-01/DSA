@@ -8,7 +8,7 @@
 
 ## **Binary Tree**
 1. If we need to showcase end of nodes then we can make a -1 node at the end of each leaf which would help in some questions, eg: Leet code Problem 100. Same Trees
-<img src = "Tree.jpg">
+<img src = "Tree.jpg" width=500>
 
 Code for that is, this would give the vector with -1 for leaf nodes.
 ```
