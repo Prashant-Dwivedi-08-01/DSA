@@ -1,5 +1,23 @@
 # dsa-cheat-sheet
 
+## **Sorting**
+1. Cyclic Sort
+```
+void cyclic_sort(vector<int> &v){
+    int present_index = 0;
+    while(present_index < v.size()){
+        int correct_index = v[present_index] - 1; //Correct Index of Number at i is (that number) - 1;
+        if(v[present_index] != v[correct_index]){
+            swap(v[present_index], v[correct_index]);
+        }
+        else{
+            present_index++;
+        }
+    }
+}
+
+```
+
 ## **Heap**
 1. Heap is Formed from Full Binary Tree i.e complete till level h-1 and then filled form left to right at level h
 2. At any index i in array, it's child is 2*i and (2*i+1) and parent is floor(i/2).
