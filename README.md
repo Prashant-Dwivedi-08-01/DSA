@@ -6,7 +6,7 @@
 void cyclic_sort(vector<int> &v){
     int present_index = 0;
     while(present_index < v.size()){
-        int correct_index = v[present_index] - 1; //Correct Index of Number at i is (that number) - 1;
+        int correct_index = v[present_index] - 1; //Here Correct Index  if basically, we are sayinbg that what is the correct index for the number at i. Correct Index of Number at i is (that number) - 1;
         if(v[present_index] != v[correct_index]){
             swap(v[present_index], v[correct_index]);
         }
