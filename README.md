@@ -2,7 +2,7 @@
 
 ## **Sorting**
 1. Cyclic Sort
-```
+```cpp
 void cyclic_sort(vector<int> &v){
     int present_index = 0;
     while(present_index < v.size()){
@@ -29,7 +29,7 @@ void cyclic_sort(vector<int> &v){
 <img src = "Tree.jpg" width=500>
 
 Code for that is, this would give the vector with -1 for leaf nodes.
-```
+```cpp
   void inOrder(TreeNode* root, vector<int> &v){
         if(root){
             inOrder(root->left,v);
@@ -41,7 +41,7 @@ Code for that is, this would give the vector with -1 for leaf nodes.
 ```
 One More Better way to traverse the two trees is.
 Here we traverse both the trees together, first Right Subtree in both trees and then left subtree in both the trees.
-```
+```cpp
   bool isSameTree(struct TreeNode* p, struct TreeNode* q){
     if(!p && !q) return true;
     if((!p && q) || (p && !q)) return false;
