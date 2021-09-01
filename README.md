@@ -1,7 +1,12 @@
 # dsa-cheat-sheet
 
 ## **Sorting**
-1. Cyclic Sort
+1. Cyclic Sort: Cyclic Sort is Applicable when number are in Range 1 to N. Here, sorting is done based on conept that, each index holds vaue equal to index.
+2. Here, if negative numbers or numbers greater than the length of array are present then simply ignore them, remaning numbers will be definitely on it's right place
+```
+Example: a = [3, 4, -1, 1]
+         after sorting a = [1, -1, 3, 4], here 1, 3, and 4 are at proper places rest ignore
+```
 ```cpp
 void cyclic_sort(vector<int> &v){
     int present_index = 0;
