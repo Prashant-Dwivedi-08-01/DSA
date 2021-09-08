@@ -8,6 +8,27 @@ b) Predicate Function viz. Upto n'th index sab kuch true and then sab false aisa
    Here, we can use binary search to find the first occurance                                      
    Eg:https://leetcode.com/problems/first-bad-version
 ```
+2. Code
+```cpp
+int binarySearch(vector<int> arr, int target)
+{
+    int s = 0;
+    int e = arr.size() - 1;
+    bool isAsc = (arr[0] < arr[arr.size() - 1]);
+    while (s <= e)
+    {
+        int mid = s + (e - s) / 2;
+        if (arr[mid] == target)
+            return mid;
+        if (arr[mid] < target)
+            s = mid + 1;
+        else if (arr[mid] > target)
+            e = mid - 1;
+
+    }
+    return -1;
+}
+```
 
 ## **Sorting**
 1. Cyclic Sort: Cyclic Sort is Applicable when number are in Range 1 to N. Here, sorting is done based on conept that, each index holds vaue equal to index.
