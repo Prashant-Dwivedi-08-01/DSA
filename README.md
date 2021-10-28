@@ -1,4 +1,4 @@
-# dsa-cheat-sheet
+## dsa-cheat-sheet
 
 ## **Binary Search**
 1. Pattern:-> 
