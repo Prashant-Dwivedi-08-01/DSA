@@ -1,5 +1,9 @@
 # Dynamic Programming
 
+## Memoization Recipe
+
+<img src = "images/memo-1.png" width ="700px">
+
 ### Fibonacci
 
 1. Time Complexity  before DP
