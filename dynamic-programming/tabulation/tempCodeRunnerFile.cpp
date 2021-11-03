@@ -1,4 +1,2 @@
-
-    // cout<<fib(6)<<endl;
-    // cout<<fib(10)<<endl;
-    // cout<<fib(50)<<endl;
+table[i+num] = table[i];
+                        table[i+num].push_back(num);
