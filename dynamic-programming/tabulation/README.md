@@ -24,3 +24,10 @@
 >             3) 6 + 4 => 10 ( Moving 4 places ahead in array )
 
 <img src ="images/tabulation-2.png">
+
+## canConstruct problem
+
+1. If we can construct the present length of string, then for remaining length of string, if any word matches any number of remaining characters then we can construct the string of that much length also. Look at the example below
+> Eg: If we have words ``` abcdef ``` and we have words as ``` {"ab", "abc", "cd", "def", "abcd"} ``` then let say we have already constructed the word ab (lengt 2 ) so now remaining lenght is ``` cdef ``` this can be then checked if it can be formed form the words already present. So we see ``` cd ``` is the matching word and hence we can say that present lenght of 2 and then more length of 2 ( ``` cd ```) i.e total 4 length of word can be formed viz. ``` abcd ```
+
+<img src = "images/tabulation-3.png">
