@@ -31,3 +31,7 @@
 > Eg: If we have words ``` abcdef ``` and we have words as ``` {"ab", "abc", "cd", "def", "abcd"} ``` then let say we have already constructed the word ab (lengt 2 ) so now remaining lenght is ``` cdef ``` this can be then checked if it can be formed form the words already present. So we see ``` cd ``` is the matching word and hence we can say that present lenght of 2 and then more length of 2 ( ``` cd ```) i.e total 4 length of word can be formed viz. ``` abcd ```
 
 <img src = "images/tabulation-3.png">
+
+## allConstruct
+
+<img src="images/tabulation-4.jpg">
