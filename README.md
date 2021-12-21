@@ -55,4 +55,12 @@ class Solution:
         
 ```
 
+> When left of 9 is called, it does not go inside the if block and thus return the maxDepth which was given to it while calling it. This returned maxDepth is stored in maxDepth itself i.e updated. Then we can perform any operation with that and then call the right, right also does the same thing and returns the maxDepth it received. This maxDepth is stored in maxDepth, i.e Updated Max Depth from right is now present
+
+> Now 9'call is over and hence it finishes it's if block and now it is on it's return statement. It returns the updated maxDepth.
+
+> Now 9 was called as the left of 3, thus maxDepth is returned at the first inOrder Call of Node 3, and this maxDepth returned by 9 is stored in maxDepth of first call. Now this is the updated maxDepth from left. Now we can do any operation related to maxDepth and then we call the right of 3 with this updated maxDepth. 
+
+> And this process continues in right subtree and then finally we get the updated maxDepth from right and is stored in maxDepth of second inOrder Call and then call of root node 3 is over and we finally return the maxDepth
+
 
