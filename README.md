@@ -1,4 +1,4 @@
-## dsa-cheat-sheet
+## dsa-cheat-sheet - Missc
 
 ## **Heap**
 1. Heap is Formed from Full Binary Tree i.e complete till level h-1 and then filled form left to right at level h
@@ -32,3 +32,27 @@ Here we traverse both the trees together, first Right Subtree in both trees and 
 
 ```
 One Similar Problem is Symmetric tree: https://leetcode.com/problems/symmetric-tree/
+
+2. Returning from Traversal Methods
+
+<img scr="https://user-images.githubusercontent.com/63506466/146868935-41c56f4b-a0d7-4411-8dc1-1ebf91e1871c.png" width="600"/>
+
+
+```py
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        presentDepth = 1
+        maxDepth = 0
+        return self.inOrder(root, presentDepth, maxDepth)
+    
+    def inOrder(self, root, presentDepth, maxDepth):
+        if(root):
+            maxDepth = self.inOrder(root.left, presentDepth+1,maxDepth)
+            if(presentDepth > maxDepth):
+                maxDepth = presentDepth
+            maxDepth = self.inOrder(root.right, presentDepth+1,maxDepth)
+        return maxDepth
+        
+```
+
+
