@@ -35,7 +35,7 @@ One Similar Problem is Symmetric tree: https://leetcode.com/problems/symmetric-t
 
 2. Returning from Traversal Methods
 
-<img scr="https://user-images.githubusercontent.com/63506466/146868935-41c56f4b-a0d7-4411-8dc1-1ebf91e1871c.png" width="600"/>
+ <img src="https://user-images.githubusercontent.com/63506466/146869295-f04597cf-214e-4349-b5f3-60ba09dac71d.png" width=500 >
 
 
 ```py
