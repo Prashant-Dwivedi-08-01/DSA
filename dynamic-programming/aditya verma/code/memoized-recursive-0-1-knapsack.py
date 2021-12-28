@@ -31,28 +31,28 @@ def knapsack(weight, value, no_of_items, capacity, memo):
     
     if capacity == 0 or no_of_items == 0:
         return 0 
-        
+    
+    key = (no_of_items-1, capacity)
+    if key in memo.keys():
+        return memo[key]
+
     if(weight[no_of_items-1] <= capacity):
-        if no_of_items-1 in memo.keys():
-            return memo[no_of_items-1]
-
         include_present_item_value = value[no_of_items-1]
-
-        memo[no_of_items-1] = max(
+        memo[key] = max(
             include_present_item_value + knapsack(weight, value, no_of_items-1, capacity-weight[no_of_items-1], memo),
             knapsack(weight, value, no_of_items-1, capacity, memo)
         )
 
-        return memo[no_of_items-1]
+        return memo[key]
   
     elif weight[no_of_items-1] > capacity:
-        memo[no_of_items-1] = knapsack(weight, value, no_of_items-1, capacity, memo)
-        return memo[no_of_items-1]
+        memo[key] = knapsack(weight, value, no_of_items-1, capacity, memo)
+        return memo[key]
 
-no_of_items=30
-weight = [1,3,2,4,5,2,9,7,8,4,1,2,5,9,6,3,5,8,9,10,50,60,3,9,8,2,1,2,6,9]
-value =  [1,3,2,4,5,2,9,7,8,4,1,2,5,9,6,3,5,8,9,10,50,60,3,9,8,2,1,2,6,9]
-capacity = 200
+weight = [2,4,6,7,8] 
+value =  [10,23,43,56,34]
+capacity = 15
+no_of_items=  len(weight)
 
 memo = {}
 print(knapsack(weight, value, no_of_items, capacity, memo))
