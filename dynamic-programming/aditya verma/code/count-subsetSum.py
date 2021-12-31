@@ -3,7 +3,7 @@ def countSubsetSum(nums, n, target_sum, memo):
         return 1
     if n <= 0:
         return 0
-    #todo: CHECK WHY MEMO IS NOT WORKING 
+
     # memo
     key = (n-1, target_sum)
     if key in memo.keys():
@@ -18,5 +18,7 @@ def countSubsetSum(nums, n, target_sum, memo):
 
 
 
-array = [1,2,3,4,4,5,6,67,12]
-print(countSubsetSum(array, len(array), 9, {}))
+array = [1,2,7]
+memo = {}
+print(countSubsetSum(array, len(array), 10, memo))
+print(memo)

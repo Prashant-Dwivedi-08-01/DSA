@@ -17,8 +17,9 @@ def subsetSum(integer_array, no_of_integers, target_sum,memo):
         memo[key] =  subsetSum(integer_array, no_of_integers-1, target_sum, memo)
         return memo[key]
 
-integer_array = [1,2,3,4,4,5,6,67,12]
+integer_array = [1,2,7]
 no_of_integers = len(integer_array)
-target_sum = 9
+target_sum = 10
 memo = {}
-print(subsetSum(integer_array, no_of_integers, target_sum, memo))
+print(subsetSum(integer_array, no_of_integers, target_sum, memo)) #here memo object will be changed because we are passing it by reference
+print(memo)
