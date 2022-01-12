@@ -18,11 +18,16 @@ def lcs(s1, s2, n, m, memo):
         memo[key] = max(lcs(s1, s2, n-1, m, memo), lcs(s1, s2, n, m-1, memo))
         return memo[key]
 
-s1 = "xbdakdddds"
-s2 = "akddsds"
 
 
+s1 = "AGGTACB"
+s2 = "GXTXAYB"
 n = len(s1)
 m = len(s2)
 memo = {}
-print(lcs(s1, s2, n, m, memo))
+lcs_len = lcs(s1, s2, n, m, memo)
+print(f'Ans: ',n+m-lcs_len)
+
+
+
+

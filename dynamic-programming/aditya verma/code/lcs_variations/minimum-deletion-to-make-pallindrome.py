@@ -1,5 +1,7 @@
 #
-#* Look at the Image in adityaverma/images to check the logic of lcs
+#* Minimum deletion means the Pallindrome must be longest. This brings us to our question
+#* of longest pallindrome subsequence. Ans: (String - Longest Pallindrome Subsequence). 
+#* Remaining characters must be removed to make the string pallindrome so that becomes our ans
 def lcs(s1, s2, n, m, memo):
     #base condition
     if n == 0 or m == 0:
@@ -18,11 +20,7 @@ def lcs(s1, s2, n, m, memo):
         memo[key] = max(lcs(s1, s2, n-1, m, memo), lcs(s1, s2, n, m-1, memo))
         return memo[key]
 
-s1 = "xbdakdddds"
-s2 = "akddsds"
+s1 = 'agbcba'
 
-
-n = len(s1)
-m = len(s2)
-memo = {}
-print(lcs(s1, s2, n, m, memo))
+pallindrome_len = lcs(s1, s1[::-1], len(s1), len(s1), {})
+print(len(s1)-pallindrome_len)

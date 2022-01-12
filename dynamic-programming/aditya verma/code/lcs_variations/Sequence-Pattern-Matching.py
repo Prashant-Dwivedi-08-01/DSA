@@ -1,5 +1,5 @@
 #
-#* Look at the Image in adityaverma/images to check the logic of lcs
+#* Check if sequence S1 is present in S2
 def lcs(s1, s2, n, m, memo):
     #base condition
     if n == 0 or m == 0:
@@ -18,11 +18,17 @@ def lcs(s1, s2, n, m, memo):
         memo[key] = max(lcs(s1, s2, n-1, m, memo), lcs(s1, s2, n, m-1, memo))
         return memo[key]
 
-s1 = "xbdakdddds"
-s2 = "akddsds"
-
+s1 = "AXY"
+s2 = "AKJXPOY"
 
 n = len(s1)
-m = len(s2)
+m = len(s1)
 memo = {}
-print(lcs(s1, s2, n, m, memo))
+lcs_len = lcs(s1, s1, n, m, memo)
+#* If lcs length is same as that of the string length to be mathced then that means
+#* string to match is entirely included in LCS ans that furthur means that string 1 is
+#* completly present in s2
+if lcs_len == n:
+    print("Yes")
+else:
+    print("No")

@@ -11,18 +11,17 @@ def lcs(s1, s2, n, m, memo):
         return memo[key]
 
     #choice diagram
-    if s1[n-1] == s2[m-1]:
+    if s1[n-1] == s2[m-1] and (n-1) != (m-1):
         memo[key] = 1 + lcs(s1, s2, n-1, m-1, memo) # since in this both chars are same that means we are including this char. Thus length of lcs increases by 1. And now whatever the remaining string gives that will be added to this 1
         return memo[key]
     else:
         memo[key] = max(lcs(s1, s2, n-1, m, memo), lcs(s1, s2, n, m-1, memo))
         return memo[key]
 
-s1 = "xbdakdddds"
-s2 = "akddsds"
+s1 = "AABEBCDD"
 
 
 n = len(s1)
-m = len(s2)
+m = len(s1)
 memo = {}
-print(lcs(s1, s2, n, m, memo))
+print(lcs(s1, s1, n, m, memo))
