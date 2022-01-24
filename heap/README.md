@@ -24,7 +24,10 @@ For any position in array Arr[i]:
 * Arr[(2*i)+1] Returns the left child node.
 * Arr[(2*i)+2] Returns the right child node.
 
-### Important heapify function
+### Insert in Heap
 ![3  Heap ( Insertion )](https://user-images.githubusercontent.com/63506466/150747665-3fdca91a-dca4-48bb-afd7-7cb9cfd9848d.jpg)
 
 * Insertion in heap takes O(log(n)) in worst case
+
+### Delete in Heap
+![4  Heap ( Deletion )](https://user-images.githubusercontent.com/63506466/150749758-3c98ec70-c2b9-44f5-9f1e-a09e0e68a9d9.jpg)
