@@ -10,3 +10,12 @@ Hashing is a technique or process of mapping keys, values into the hash table by
 The idea is to make each cell of hash table point to a linked list of records that have same hash function value. 
 
 Let us consider a simple hash function as “key mod 7” and sequence of keys as 50, 700, 76, 85, 92, 73, 101. 
+![hashChaining1](https://user-images.githubusercontent.com/63506466/150945103-fc6cc151-a8eb-44f2-aa87-6ffda52b62e7.png)
+
+
+**Open Addressing**:
+a) Linear Probing
+
+https://quescol.com/data-structure/linear-probing
+
+b) https://www.geeksforgeeks.org/hashing-set-3-open-addressing/
