@@ -40,8 +40,17 @@ it in left half at proper location.
 **Time**: O(n<sup>2<sup>)
    
 <img src = "https://user-images.githubusercontent.com/63506466/151711435-3ef870f6-87d5-48ec-8d1d-249e39049cd1.png" width="600">
+         
+## **Selection Sort**
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+1) The subarray which is already sorted. 
+2) Remaining subarray which is unsorted.
+         
+<img src = "https://user-images.githubusercontent.com/63506466/151711961-76b66202-81bb-4de2-9e65-31265c1f41f6.png" width="600">
 
 
+         
+         
 ## **Binary Search**
 1. Pattern:-> 
 ```
