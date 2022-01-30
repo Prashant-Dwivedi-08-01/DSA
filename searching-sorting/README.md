@@ -12,6 +12,7 @@ The array is virtually split into a sorted and an unsorted part. Values from the
 Simple Logic: One half of array(left half) is sorted and we need to pick one element from right and "INSERT" 
 it in left half at proper location.
 
+**Time**: O(n<sup>2<sup>)
 <img src = "https://user-images.githubusercontent.com/63506466/151711435-3ef870f6-87d5-48ec-8d1d-249e39049cd1.png" width="600">
 
 
