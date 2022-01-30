@@ -7,6 +7,14 @@ Optimized: We do only required number of passes + 1 pass where we mesure if any 
 **Time:** O(n<sup>2</sup>) in worst case where array is in rever order of sorting
 <img src = "https://user-images.githubusercontent.com/63506466/151709588-c922c97b-b2a4-4b5a-a2ca-7ecf2daef4ed.png" width="600">
 
+## **Insertion Sort**
+The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+Simple Logic: One half of array(left half) is sorted and we need to pick one element from right and "INSERT" 
+it in left half at proper location.
+
+<img src = "https://user-images.githubusercontent.com/63506466/151711435-3ef870f6-87d5-48ec-8d1d-249e39049cd1.png" width="600">
+
+
 ## **Binary Search**
 1. Pattern:-> 
 ```
