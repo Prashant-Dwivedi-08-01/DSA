@@ -5,8 +5,7 @@ Unoptimized: We do N passes irrespecitive of fact that array may be sorted even 
 Optimized: We do only required number of passes + 1 pass where we mesure if any swap is being done or not. If no swap then we do not go any furthur
 
 **Time:** O(n<sup>2</sup>) in worst case where array is in rever order of sorting
-
-![image](https://user-images.githubusercontent.com/63506466/151709588-c922c97b-b2a4-4b5a-a2ca-7ecf2daef4ed.png)
+<img src = "https://user-images.githubusercontent.com/63506466/151709588-c922c97b-b2a4-4b5a-a2ca-7ecf2daef4ed.png" width="600">
 
 ## **Binary Search**
 1. Pattern:-> 
