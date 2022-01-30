@@ -7,20 +7,22 @@
 Example: a = [3, 4, -1, 1]
          after sorting a = [1, -1, 3, 4], here 1, 3, and 4 are at proper places rest ignore
 ```
-```cpp
-void cyclic_sort(vector<int> &v){
-    int present_index = 0;
-    while(present_index < v.size()){
-        int correct_index = v[present_index] - 1; //Here Correct Index  if basically, we are sayinbg that what is the correct index for the number at i. Correct Index of Number at i is (that number) - 1;
-        if(v[present_index] != v[correct_index]){
-            swap(v[present_index], v[correct_index]);
-        }
-        else{
-            present_index++;
-        }
-    }
-}
+```py
+def cyclic_sort(arr):
+    present_index = 0
+    while present_index < len(arr):
+        correct_index_for_value_at_present_index = arr[present_index] -1
+        
+        if arr[present_index] == arr[correct_index_for_value_at_present_index]:
+            present_index += 1
+        else:
+            temp = arr[present_index]
+            arr[present_index] = arr[correct_index_for_value_at_present_index]
+            arr[correct_index_for_value_at_present_index] = temp
 
+arr = [3,5,2,1,4,7,6,-1,-4,23]
+cyclic_sort(arr)
+print(arr)
 ```
 
 ## **Bubble Sort** 
