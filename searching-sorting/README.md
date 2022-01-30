@@ -62,23 +62,22 @@ b) Predicate Function viz. Upto n'th index sab kuch true and then sab false aisa
    Eg:https://leetcode.com/problems/first-bad-version
 ```
 2. Code
-```cpp
-int binarySearch(vector<int> arr, int target)
-{
-    int s = 0;
-    int e = arr.size() - 1;
-    bool isAsc = (arr[0] < arr[arr.size() - 1]);
-    while (s <= e)
-    {
-        int mid = s + (e - s) / 2;
-        if (arr[mid] == target)
-            return mid;
-        if (arr[mid] < target)
-            s = mid + 1;
-        else if (arr[mid] > target)
-            e = mid - 1;
+```py
+def binary_search(arr, target):
+    s = 0
+    e = len(arr)-1
+    while(s <= e):
+        mid = s + (e-s)//2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            s = mid + 1
+        else:
+            e = mid - 1
+    return -1
 
-    }
-    return -1;
-}
+arr = [1,2,5,7,8,10]
+idx = binary_search(arr, 10)
+print(idx)
+
 ```
