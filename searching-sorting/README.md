@@ -1,3 +1,12 @@
+## **Bubble Sort** 
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+Unoptimized: We do N passes irrespecitive of fact that array may be sorted even before N pass. 
+Optimized: We do only required number of passes + 1 pass where we mesure if any swap is being done or not. If no swap then we do not go any furthur
+
+**Time:** O(n<sup>2</sup>) in worst case where array is in rever order of sorting
+<img src = "https://user-images.githubusercontent.com/63506466/151709588-c922c97b-b2a4-4b5a-a2ca-7ecf2daef4ed.png" width="600">
+
 ## **Binary Search**
 1. Pattern:-> 
 ```
