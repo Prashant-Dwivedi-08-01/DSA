@@ -1,8 +1,6 @@
 # Here we are asked to return minimum value using get_min() but with no extra space.
 # Thus we can use only O(n) space here, viz. a variable to store the min value
 
-import re
-
 
 class Stack:
     def __init__(self) -> None:
