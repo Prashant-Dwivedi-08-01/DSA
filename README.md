@@ -1,4 +1,5 @@
 ## dsa-cheat-sheet - Missc
+This is the DSA cheat sheet which contains the codes and also the explanations
 
 ## **Heap**
 1. Heap is Formed from Full Binary Tree i.e complete till level h-1 and then filled form left to right at level h
