@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-# Leetcode Question from Kunal's Playlist
+# Leetcode Question from Kunal's Kushwaha's playlist
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
