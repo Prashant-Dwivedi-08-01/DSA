@@ -1,13 +1,11 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
+from LeetCode_Linked_List_Code import LL
 class Solution:
     def reverse(self, head):
         curr = head
         prev = nxt = None
+        pas = 0
         while curr != None:
+            pas += 1
             # --> first fix next using curr node
             # --> then point curr node to back node 
             # --> then make present node as back(prev node) for next pass
@@ -19,20 +17,13 @@ class Solution:
             curr = nxt
         return prev
 
-head = ListNode(1)
-temp = head
-
-temp.next = ListNode(2)
-temp = temp.next
-
-temp.next = ListNode(3)
-temp = temp.next
-
-temp.next = ListNode(4)
-temp = temp.next
+lst = LL()
+lst.append(1)
+lst.append(2)
+lst.append(3)
+lst.append(4)
 
 sol = Solution()
-lst = sol.reverse(head)
-while(lst != None):
-    print(lst.val)
-    lst = lst.next
+lst.set_head(sol.reverse(lst.get_head()))
+
+lst.display()
