@@ -29,6 +29,6 @@ def merge(left, right):
     
     return merged_arr
     
-arr = [0, 5, 4, 6, 3, 2, 1]
+arr = [9,6,8,9,2,3,5,7,3]
 arr = merge_sort(arr)
 print(arr)
