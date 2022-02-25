@@ -50,7 +50,7 @@ The selection sort algorithm sorts an array by repeatedly finding the minimum el
          
 <img src = "https://user-images.githubusercontent.com/63506466/151711961-76b66202-81bb-4de2-9e65-31265c1f41f6.png" width="600">
 
-## Merge Sort
+## Merge Sort Algo
          
 ![image](https://user-images.githubusercontent.com/63506466/155659960-bdebe093-617a-4d6b-bc13-fd9b81fdb227.png)
 * The elements are split into two sub-arrays (n/2) again and again until only one element is left.
