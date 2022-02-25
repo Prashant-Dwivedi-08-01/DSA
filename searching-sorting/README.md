@@ -52,13 +52,19 @@ The selection sort algorithm sorts an array by repeatedly finding the minimum el
 
 ## Merge Sort Algo
          
-![image](https://user-images.githubusercontent.com/63506466/155659960-bdebe093-617a-4d6b-bc13-fd9b81fdb227.png)
 * The elements are split into two sub-arrays (n/2) again and again until only one element is left.
 * Merge sort uses additional storage for sorting the auxiliary array.
 * Merge sort uses three arrays where two are used for storing each half, and the third external one is used to store the final sorted list by merging the other two and each array is then sorted recursively.
 * At last, all sub-arrays are merged to make it ‘n’ element size of the array.
-     
+         
+ <img src = "https://user-images.githubusercontent.com/63506466/155659960-bdebe093-617a-4d6b-bc13-fd9b81fdb227.png" width="600">
 
+         
+## Quick Sort
+
+Here we a pivot element and our JOB is to place Pivot element at it's right position. After doing this we divide our array into two halfs and then we make recursive calls for each halfs to sort them seperately as Pivot is already at right place
+
+Now To bring Pivot at right place we simply traverse array from both start and end and swap when we get any element which violtes the rule i.e an element is smaller but is present to right of pivot, this should be sent to left and vice versa.
 ## Comparing the Sorting Algorithms
 <table><thead><tr><th><strong>Algorithm</strong></th><th colspan="3"><strong>Time Complexity</strong></th><th>&nbsp;</th></tr><tr><th>&nbsp;</th><th>&nbsp; <strong>Best</strong></th><th><strong>Average</strong></th><th><strong>Worst</strong></th><th>&nbsp;</th></tr></thead><tbody><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/selection-sort/">Selection Sort</a></td><td>Ω(n^2)</td><td>θ(n^2)</td><td>O(n^2)</td><td>&nbsp;</td></tr><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/bubble-sort/">Bubble Sort</a></td><td>Ω(n)</td><td>θ(n^2)</td><td>O(n^2)</td><td>&nbsp;</td></tr><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/insertion-sort/">Insertion Sort</a></td><td>Ω(n)</td><td>θ(n^2)</td><td>O(n^2)</td><td>&nbsp;</td></tr><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/heap-sort/">Heap Sort</a></td><td>Ω(n log(n))</td><td>θ(n log(n))</td><td>O(n log(n))</td><td>&nbsp;</td></tr><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/quick-sort/">Quick Sort</a></td><td>Ω(n log(n))</td><td>θ(n log(n))</td><td>O(n^2)</td><td>&nbsp;</td></tr><tr><td><a target="_blank" rel="noopener noreferrer nofollow" href="http://geeksquiz.com/merge-sort/">Merge Sort</a></td><td>Ω(n log(n))</td><td>θ(n log(n))</td><td>O(n log(n))</td><td>&nbsp;</td></tr><tr><td><a href="https://www.geeksforgeeks.org/bucket-sort-2/">Bucket Sort</a></td><td>Ω(n+k)</td><td>θ(n+k)</td><td>O(n^2)</td><td>&nbsp;</td></tr><tr><td><a href="https://www.geeksforgeeks.org/radix-sort/">Radix Sort</a></td><td>Ω(nk)</td><td>θ(nk)</td><td>O(nk)</td><td>&nbsp;</td></tr><tr><td>Count Sort</td><td>Ω(n+k)</td><td>θ(n+k)</td><td>O(n+k)</td><td>&nbsp;</td></tr></tbody></table>
          
