@@ -23,5 +23,5 @@ long long gridTraveler(int m, int n){
 
 int main() 
 {
-    cout<<gridTraveler(180,180);
+    cout<<gridTraveler(3,3);
 }
