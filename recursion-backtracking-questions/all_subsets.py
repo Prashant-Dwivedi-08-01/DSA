@@ -1,5 +1,5 @@
 #
-#! PRINT All subsets
+#!------------- PRINT All subsets ------------------
 def print_all_subsets(string, present_subset):
     if len(string) == 0:
         print(present_subset)
@@ -13,7 +13,7 @@ def print_all_subsets(string, present_subset):
     # dont include
     print_all_subsets(string[1:],present_subset)
 
-#! Return All Subsets as List Array
+#!----------- Return All Subsets as List Array --------------
  
 #* METHOD 1 *:  Return new array
 
@@ -25,7 +25,7 @@ def print_all_subsets(string, present_subset):
 #* Right call updates the current result array and returns it back to root.
 #* Root then returns it to the presivious call.
 
-#! LOOK AT THE IMAGE IN IMAGES FOR RETURN LOGIC 
+#LOOK AT THE IMAGE IN IMAGES FOR RETURN LOGIC 
 def return_all_subsets_m1(string, present_subset, result_arr):
     if len(string) == 0:
         result_arr.append(present_subset)
