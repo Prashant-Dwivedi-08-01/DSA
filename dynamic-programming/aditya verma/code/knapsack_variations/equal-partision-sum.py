@@ -8,7 +8,7 @@ class Solution:
             memo = {}
             return self.subsetSum(nums, len(nums), presentSum//2, memo)
     
-    def subsetSum(self, integer_array, no_of_integers, target_sum,memo):
+    def subsetSum(self, integer_array, no_of_integers, target_sum, memo):
         if target_sum == 0:
             return True 
         if no_of_integers <= 0:

@@ -1,6 +1,6 @@
 #
 #* Here, we have the liberty to include an item more than once
-
+# LOGIC: Here, we keep including the same item untill it get's excluded. Once it is excluded we dont include it again
 def unbounded_knapsack(weight, profits, capacity, n, memo):
     if capacity == 0 or n == 0:
         return 0 #* maximum profit is 0 here
@@ -10,7 +10,8 @@ def unbounded_knapsack(weight, profits, capacity, n, memo):
         return memo[key]
 
     if weight[n-1] <= capacity:
-        memo[key] =  max( profits[n-1] + unbounded_knapsack(weight, profits, capacity-weight[n-1],n, memo), unbounded_knapsack(weight, profits, capacity, n-1, memo))
+        memo[key] =  max( profits[n-1] + unbounded_knapsack(weight, profits, capacity-weight[n-1], n, memo),\
+             unbounded_knapsack(weight, profits, capacity, n-1, memo))
         return memo[key]
     else:
         memo[key]= unbounded_knapsack(weight, profits, capacity,n-1, memo)

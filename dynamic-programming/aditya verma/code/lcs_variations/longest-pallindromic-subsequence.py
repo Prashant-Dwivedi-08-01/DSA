@@ -1,5 +1,6 @@
 #
-#* what minimumnumber of insertion and deletion shall be done to make the new string from given string
+#* what minimumnumber of insertion and deletion shall
+#* be done to make the new string from given string
 def lcs(s1, s2, n, m, memo):
     if n == 0 or m == 0:
         return 0

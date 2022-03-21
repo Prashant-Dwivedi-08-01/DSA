@@ -10,7 +10,8 @@ def countSubsetSum(nums, n, target_sum, memo):
         return memo[key]
     
     if nums[n-1] <= target_sum:
-        memo[key] =  countSubsetSum(nums, n-1, target_sum-nums[n-1], memo) + countSubsetSum(nums, n-1, target_sum, memo)
+        memo[key] =  countSubsetSum(nums, n-1, target_sum-nums[n-1], memo) + \
+                        countSubsetSum(nums, n-1, target_sum, memo)
         return memo[key]
     else:
         memo[key] =  countSubsetSum(nums, n-1, target_sum,memo)
@@ -21,4 +22,4 @@ def countSubsetSum(nums, n, target_sum, memo):
 array = [1,2,7]
 memo = {}
 print(countSubsetSum(array, len(array), 10, memo))
-print(memo)
+# print(memo)

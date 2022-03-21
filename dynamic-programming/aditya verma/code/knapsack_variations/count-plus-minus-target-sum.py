@@ -11,8 +11,8 @@ def helper(array, n, desired_sum, current_sum):
         else:
             return 0
 
-    return helper(array, n-1 , desired_sum, current_sum + array[n-1]) + \
-           helper(array, n-1, desired_sum, current_sum - array[n-1])
+    return helper(array, n-1 , desired_sum, current_sum + array[n-1]) \
+           + helper(array, n-1, desired_sum, current_sum - array[n-1])
 
 array = [1,1,2,3]
 n = len(array)

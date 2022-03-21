@@ -1,5 +1,6 @@
 #
-#* In this approach we are spending more memory in maintaing the count variable. And this variable is also filled in the stack
+#* In this approach we are spending more memory in maintaing the count variable. 
+#* And this variable is also filled in the stack
 
 def helper(nums, n, target_sum, count, memo):
     if target_sum == 0:
