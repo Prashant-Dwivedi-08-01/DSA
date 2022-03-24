@@ -13,7 +13,7 @@ def print_permutations(string, present_ans):
         print_permutations(string[1:], present_ans=left + char + right) 
 
 
-string = "abc"
+string = "aab"
 print_permutations(string, "")
 
 #! Return Permutations
@@ -32,7 +32,7 @@ def return_permutations(string, present_ans, result):
         result = return_permutations(string[1:],present_ans, result) 
     return result
 
-string = "abc"
-ans = return_permutations(string, "", [])
-print(ans)
+# string = "abc"
+# ans = return_permutations(string, "", [])
+# print(ans)
 
