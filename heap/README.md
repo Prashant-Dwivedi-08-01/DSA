@@ -1,5 +1,7 @@
 # Heap
 
+It’s a complete tree (All levels are completely filled except possibly the last level and the last level has all keys as left as possible). This property of Binary Heap makes them suitable to be stored in an array.
+
 ### Min heap
 
 A Min-Heap is a complete binary tree in which the value in each internal node is smaller than or equal to the values in the children of that node. 
