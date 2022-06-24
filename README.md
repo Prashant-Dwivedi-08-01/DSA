@@ -1,7 +1,13 @@
 ## dsa-cheat-sheet - Missc
-This is the DSA cheat sheet which contains the codes and also the explanations
-## What does ‘Space Complexity’ mean?
 
+### Identifications: 
+
+1. Your solution must use only constant extra space. --> `Think of Two Pointer`
+2. Array number 1 to N --> `Think of Cyclic Sort`
+3. First K, last K, K largest, K Smallest --> `Think of Heap i.e Priority Queue`
+4. Smallest, Largest, Maximum, Minimum, Optimnal along with recursion --> `Think of Some Kind of DP`
+
+## What does ‘Space Complexity’ mean?
 Space Complexity: 
 The term Space Complexity is misused for Auxiliary Space at many places. Following are the correct definitions of Auxiliary Space and Space Complexity. 
 
