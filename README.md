@@ -1,11 +1,26 @@
 ## dsa-cheat-sheet - Missc
 
-### Identifications: 
+## ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Identification`
 
-1. Your solution must use only constant extra space. --> `Think of Two Pointer`
-2. Array number 1 to N --> `Think of Cyclic Sort`
-3. First K, last K, K largest, K Smallest --> `Think of Heap i.e Priority Queue`
-4. Smallest, Largest, Maximum, Minimum, Optimnal along with recursion --> `Think of Some Kind of DP`
+1. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Two Pointer`
+
+> **Your solution must use only constant extra space**
+
+2. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Cyclic Sort`
+
+> **Array numbered 1 to N**
+
+3. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Heap i.e Priority Queue`
+
+> **First K, last K, K largest, K Smallest**
+
+4. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Some Kind of DP`
+
+> **Smallest, Largest, Maximum, Minimum, Optimnal along with recursion**
+
+5.  ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Binary Search`
+
+> **Searching problem, Sorted Array, Sorted-Rotatated, Find log(n) solution**
 
 ## What does ‘Space Complexity’ mean?
 Space Complexity: 
