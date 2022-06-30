@@ -99,6 +99,12 @@ idx = binary_search(arr, 10)
 print(idx)
 
 ```
-         
+
+3. Binary Search in Rotated Sorted Array
+
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+![Binary Search in Sorted Rotated Array](https://user-images.githubusercontent.com/63506466/176592626-3615af8c-2eb5-4d04-a667-c3599b29a3dc.png)
+
   
          
