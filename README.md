@@ -1,7 +1,28 @@
 ## dsa-cheat-sheet - Missc
-This is the DSA cheat sheet which contains the codes and also the explanations
-## What does ‘Space Complexity’ mean?
 
+## ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Identification`
+
+1. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Two Pointer`
+
+> **Your solution must use only constant extra space**
+
+2. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Cyclic Sort`
+
+> **Array numbered 1 to N**
+
+3. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Heap i.e Priority Queue`
+
+> **First K, last K, K largest, K Smallest**
+
+4. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Think of Some Kind of DP`
+
+> **Smallest, Largest, Maximum, Minimum, Optimnal along with recursion**
+
+5.  ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Binary Search`
+
+> **Searching problem, Sorted Array, Sorted-Rotatated, Find log(n) solution**
+
+## What does ‘Space Complexity’ mean?
 Space Complexity: 
 The term Space Complexity is misused for Auxiliary Space at many places. Following are the correct definitions of Auxiliary Space and Space Complexity. 
 
