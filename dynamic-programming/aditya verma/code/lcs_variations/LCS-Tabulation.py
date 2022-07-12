@@ -12,7 +12,10 @@ def lcs_tabulation(s1, s2):
         t[i][0] = 0
     for j in range(0,len(s2) + 1):
         t[0][j] = 0
-    print(t)
+    
+    # print matrix
+    for row in t:
+        print(row)
 
     #* loop over the matrix from (1,1) and fill the matrix using previous entries
     for i in range(1,len(s1) + 1):
