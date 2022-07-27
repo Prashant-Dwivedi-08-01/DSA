@@ -1,0 +1,1 @@
+heroku run flask db upgrade -a rbl-backend
